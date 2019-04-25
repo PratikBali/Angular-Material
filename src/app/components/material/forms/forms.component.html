@@ -1,0 +1,64 @@
+<div>
+  <span>Title</span>
+  <span>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="" value="">
+    </mat-form-field>
+  </span>
+</div>
+
+<div>
+  <span>Unit</span>
+  <span>
+    <mat-form-field>
+      <!-- <mat-label>Unit</mat-label> -->
+      <mat-select>
+        <mat-option value="1"> 1 </mat-option>
+        <mat-option value="2"> 2 </mat-option>
+        <mat-option value="3"> 3 </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </span>
+</div>
+
+
+<div>
+  <span>Quantity </span>
+  <span>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="" value="">
+    </mat-form-field>
+  </span>
+</div>
+
+<div>
+  <span>Date </span>
+  <span>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </span>
+</div>
+
+<div>
+  <span>End Date </span>
+  <span>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>  
+  </span>
+</div>
+
+
+<div>
+  <span>
+    <button mat-raised-button color="primary">Primary</button>
+  </span>
+  <span>
+    <button mat-raised-button color="warn">Warn</button>
+  </span>
+</div>
